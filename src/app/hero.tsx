@@ -38,11 +38,6 @@ function Hero() {
                   Whatsapp : +905374962788
                 </Button>
               </a>
-              <a href="https://instagram.com/tesisatcihasanustaksyeri">
-                <Button color="gray" variant="outlined">
-                  Instagram : +905374962788
-                </Button>
-              </a>
             </div>
             <div className="mb-8 flex justify-center gap-4 lg:justify-start">
               <a href="https://instagram.com/tesisatcihasanustaksyeri">
