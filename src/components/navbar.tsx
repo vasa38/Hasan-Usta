@@ -10,6 +10,7 @@ import {
   ChatBubbleBottomCenterIcon,
   PhoneIcon,
 } from "@heroicons/react/24/solid";
+import { isMobile } from "react-device-detect";
 
 const NAV_MENU = [
   {
@@ -59,6 +60,10 @@ export function Navbar() {
       () => window.innerWidth >= 960 && setOpen(false)
     );
   }, []);
+
+  if (isMobile) {
+    return <></>;
+  }
 
   return (
     <div className="px-10 sticky top-4 z-50">
