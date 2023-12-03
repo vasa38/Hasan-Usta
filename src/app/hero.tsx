@@ -7,7 +7,7 @@ import { isMobile } from "react-device-detect";
 function Hero() {
   return (
     <div
-      style={{ marginTop: isMobile ? 400 : 0 }}
+      style={{ marginTop: isMobile ? 1000 : 0 }}
       className="!flex h-[55vh] w-full items-center justify-between px-10"
     >
       <Image
