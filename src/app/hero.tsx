@@ -7,7 +7,7 @@ import { isMobile } from "react-device-detect";
 function Hero() {
   return (
     <div
-      style={{ marginTop: isMobile ? 100 : 0 }}
+      style={{ marginTop: isMobile ? 400 : 0 }}
       className="!flex h-[55vh] w-full items-center justify-between px-10"
     >
       <Image
@@ -35,18 +35,18 @@ function Hero() {
             </Typography>
             <div className="mb-8 flex justify-center gap-4 lg:justify-start">
               <a href={`tel:${+905374962788}`}>
-                <Button color="gray">Ara : +905374962788</Button>
+                <Button color="gray">Telefon</Button>
               </a>
               <a href="https://wa.me/+905374962788">
                 <Button color="gray" variant="outlined">
-                  Whatsapp : +905374962788
+                  Whatsapp
                 </Button>
               </a>
             </div>
             <div className="mb-8 flex justify-center gap-4 lg:justify-start">
               <a href="https://instagram.com/tesisatcihasanustaksyeri">
                 <Button color="gray" variant="outlined">
-                  Instagram : +905374962788
+                  Instagram
                 </Button>
               </a>
             </div>
