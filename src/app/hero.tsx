@@ -15,7 +15,7 @@ function Hero() {
         className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
       />
       <div
-        style={{ marginTop: isMobile ? 30 : 0 }}
+        style={{ paddingTop: isMobile ? 30 : 0 }}
         className="container mx-auto mt-28"
       >
         <div className="grid grid-cols-12 text-center lg:text-left">
