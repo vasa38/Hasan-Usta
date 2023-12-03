@@ -11,7 +11,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Kayseri Tesisatçı",
-  description: "Kayseri tesisatçı hasan usta.",
+  description: "Kayseri Kayseri Tesisatçı Hasan Usta.",
 };
 
 export default function RootLayout({

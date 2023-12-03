@@ -24,10 +24,9 @@ function Hero() {
               Bambaşka bir tesisat deneyimi
             </Typography>
             <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
-              Sıradanlığı geride bırakın ve mükemmel tesisat hizmetlerine adım
-              atın. Ben tesisatçı hasan usta, tesisatın sihirbazıyım. Su, gaz,
-              ve kalorifer tesisatı gibi her türlü ihtiyacınız için buradayım.
-              Profesyonel hizmetlerimle evinizi veya iş yerinizi güvende ve
+              Mükemmel tesisat hizmetleri için sürekli olarak size vermiş
+              olduğumuz hizmeti en kaliteli şekilde sunmayı hedefliyoruz.
+              Profosyenel hizmetlerimizle evinizi veya iş yerinizi güvende ve
               konforlu tutmak için buradayız.
             </Typography>
             <div className="mb-8 flex justify-center gap-4 lg:justify-start">
@@ -37,6 +36,11 @@ function Hero() {
               <a href="https://wa.me/+905374962788">
                 <Button color="gray" variant="outlined">
                   Whatsapp : +905374962788
+                </Button>
+              </a>
+              <a href="https://instagram.com/tesisatcihasanustaksyeri">
+                <Button color="gray" variant="outlined">
+                  Instagram : +905374962788
                 </Button>
               </a>
             </div>
