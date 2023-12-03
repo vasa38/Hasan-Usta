@@ -48,7 +48,7 @@ export function OutImpressiveStats() {
             variant="lead"
             className="mx-auto mb-24 w-full !text-gray-500 lg:w-5/12"
           >
-            {"Kayseri'de tesisat alanında lider konumdayız. Her türlü tesisat"}
+            {"Kayseri'de tesisat alanında lider konumdayız. Her türlü tesisat "}
             sorununu çözmek için gerekli bilgi ve beceriye sahibiz.
           </Typography>
         </div>
