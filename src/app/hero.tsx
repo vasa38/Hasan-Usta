@@ -25,7 +25,7 @@ function Hero() {
           color="blue-gray"
           className="absolute text-[#122f53] text-center justify-center it lg:text-5xl !leading-snug text-4xl lg:max-w-3xl"
         >
-          {"KALİTELİ İŞÇİLİK UYGUN FİYAT"}
+          {"KALİTELİ İŞÇİLİK \n UYGUN FİYAT"}
         </Typography>
       </div>
       <div

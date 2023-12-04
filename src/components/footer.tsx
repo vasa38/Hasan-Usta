@@ -3,7 +3,11 @@ import { Typography, Button, Input } from "@material-tailwind/react";
 const LINKS = [
   {
     title: "Hasan Usta",
-    items: ["Whatsapp: +905374962788", "Telefon: +905374962788"],
+    items: [
+      "Whatsapp: +905374962788",
+      "Telefon: +905374962788",
+      "Instagram: @tesisatcihasanustakayseri",
+    ],
   },
 ];
 
