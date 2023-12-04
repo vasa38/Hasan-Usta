@@ -28,7 +28,7 @@ function Hero() {
             alt="bg-img"
             className={
               isMobile
-                ? "absolute mt-20 justify-center"
+                ? "absolute mt-20 justify-center object-cover object-center inset-0 ml-auto"
                 : "absolute mt-20 justify-center inset-0 ml-auto w-[800px] h-[780px] rounded-bl-[100px] object-cover object-center"
             }
           />
