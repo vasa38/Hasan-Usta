@@ -17,7 +17,7 @@ function Hero() {
   return (
     <>
       <div
-        style={{ marginTop: isMobile ? 800 : 0 }}
+        style={{ marginTop: isMobile ? 400 : 0 }}
         className="!flex h-[55vh] w-full items-center justify-between px-10"
       >
         <Link href={`tel:${+905374962788}`}>
