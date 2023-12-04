@@ -16,7 +16,7 @@ export function FixedPlugin() {
     </Link> */
   }
   return (
-    <div className="fixed bottom-4 left-4">
+    <div className="fixed bottom-5 left-4">
       <Link href={`tel:${+905374962788}`}>
         <div className="bg-green-500 text-white p-4 my-4 rounded-full shadow-md">
           <PhoneIcon className="h-6 w-6 text-white" />
