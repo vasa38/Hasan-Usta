@@ -16,7 +16,7 @@ import StatsCard from "@/components/stats-card";
 const STATS = [
   {
     icon: DocumentTextIcon,
-    count: "30+",
+    count: "35+",
     title: "Yıllık Deneyim",
   },
   {
@@ -42,7 +42,7 @@ export function OutImpressiveStats() {
       <div className="container mx-auto text-center lg:text-left">
         <div className="grid place-items-center text-center">
           <Typography variant="h2" color="blue-gray" className="mb-2 text-4xl">
-            30 Yılı Aşkın Tecrübemizle,
+            35 Yılı Aşkın Tecrübemizle,
           </Typography>
           <Typography
             variant="lead"
