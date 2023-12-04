@@ -1,7 +1,9 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { PhoneIcon } from "@heroicons/react/24/solid";
+import { CameraIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 import { Fab, Action } from "react-tiny-fab";
 
 export function FixedPlugin() {
@@ -16,12 +18,27 @@ export function FixedPlugin() {
     </Link> */
   }
   return (
-    <div className="fixed bottom-5 left-4">
-      <Link href={`tel:${+905374962788}`}>
-        <div className="bg-green-500 text-white p-4 my-4 rounded-full shadow-md">
-          <PhoneIcon className="h-6 w-6 text-white" />
-        </div>
-      </Link>
+    <div>
+      <div style={{ bottom: 125 }} className="fixed left-4">
+        <Link href={`tel:${+905374962788}`}>
+          <div className="bg-green-500 text-white p-4 my-4 rounded-full shadow-md">
+            <PhoneIcon className="h-6 w-6 text-white" />
+          </div>
+        </Link>
+      </div>
+      <div className="fixed bottom-20 left-4">
+        <SocialIcon
+          style={{ width: 55, height: 55 }}
+          network="whatsapp"
+          url="https://wa.me/+905374962788/"
+        />
+      </div>
+      <div className="fixed bottom-5 left-4">
+        <SocialIcon
+          style={{ width: 55, height: 55 }}
+          url="https://www.instagram.com/tesisatcihasanustakayseri/"
+        />
+      </div>
     </div>
   );
 }
