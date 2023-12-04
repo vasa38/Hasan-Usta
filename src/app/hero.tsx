@@ -22,11 +22,15 @@ function Hero() {
       >
         <Link href={`tel:${+905374962788}`}>
           <Image
-            width={400}
-            height={400}
+            width={200}
+            height={200}
             src="/image/logo.jpeg"
             alt="bg-img"
-            className="absolute mt-20 inset-0 ml-auto w-[800px] h-[780px] rounded-bl-[100px] object-cover object-center"
+            className={
+              isMobile
+                ? ""
+                : "absolute mt-20 justify-center inset-0 ml-auto w-[800px] h-[780px] rounded-bl-[100px] object-cover object-center"
+            }
           />
           {/***/}
         </Link>
