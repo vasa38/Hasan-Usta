@@ -9,8 +9,8 @@ const LINKS = [
       "Instagram: @tesisatcihasanustakayseri",
     ],
     links: [
-      `tel:${+905374962788}`,
       "https://wa.me/+905374962788",
+      `tel:${+905374962788}`,
       "https://instagram.com/tesisatcihasanustakayseri",
     ],
   },
