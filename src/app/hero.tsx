@@ -42,7 +42,7 @@ function Hero() {
                 color="blue-gray"
                 className="lg:text-5xl !leading-snug text-3xl lg:max-w-3xl"
               >
-                35 Yıllık Tecrübe ile Kayserinin Tesisatçısı
+                35 Yıllık Tecrübe ile Kayserinin En İyi Tesisatçısı
               </Typography>
               <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
                 Mükemmel tesisat hizmetleri için sürekli olarak size vermiş
