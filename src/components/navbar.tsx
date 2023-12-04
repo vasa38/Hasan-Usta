@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -10,7 +10,6 @@ import {
   ChatBubbleBottomCenterIcon,
   PhoneIcon,
 } from "@heroicons/react/24/solid";
-import { isMobile } from "react-device-detect";
 
 const NAV_MENU = [
   {
@@ -49,7 +48,13 @@ function NavItem({ children, href }: NavItemProps) {
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(true);
 
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      setIsMobile(false);
+    }
+  }, []);
   function handleOpen() {
     setOpen((cur) => !cur);
   }

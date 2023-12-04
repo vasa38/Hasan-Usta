@@ -16,9 +16,10 @@ interface CourseCardProps {
 export function CourseCard({ img, title, desc }: CourseCardProps) {
   return (
     <Card className="border">
-      <CardHeader className="h-64">
+      <CardHeader className="h-54">
         <Image
-          layout="fill"
+          width={600}
+          height={600}
           src={img}
           alt={title}
           className="transform transition duration-500 hover:scale-110"
