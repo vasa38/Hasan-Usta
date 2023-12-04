@@ -8,6 +8,11 @@ const LINKS = [
       "Telefon: +905374962788",
       "Instagram: @tesisatcihasanustakayseri",
     ],
+    links: [
+      `tel:${+905374962788}`,
+      "https://wa.me/+905374962788",
+      "https://instagram.com/tesisatcihasanustakayseri",
+    ],
   },
 ];
 
@@ -24,11 +29,11 @@ export function Footer() {
                 <Typography variant="h6" color="blue-gray" className="mb-4">
                   {title}
                 </Typography>
-                {items.map((link) => (
+                {items.map((link, i) => (
                   <li key={link}>
                     <Typography
                       as="a"
-                      href={`tel:${+905374962788}`}
+                      href={LINKS[0].links[i]}
                       className="py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900"
                     >
                       {link}
