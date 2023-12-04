@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button, Typography, Card } from "@material-tailwind/react";
 import React, { useEffect } from "react";
+import Link from "next/link";
 
 function Hero() {
   const [isMobile, setIsMobile] = React.useState(true);
@@ -19,13 +20,15 @@ function Hero() {
         style={{ marginTop: isMobile ? 1000 : 0 }}
         className="!flex h-[55vh] w-full items-center justify-between px-10"
       >
-        <Image
-          width={500}
-          height={500}
-          src="/image/logo.jpeg"
-          alt="bg-img"
-          className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
-        />
+        <Link href={`tel:${+905374962788}`}>
+          <Image
+            width={500}
+            height={500}
+            src="/image/logo.jpeg"
+            alt="bg-img"
+            className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
+          />
+        </Link>
         <div className="container mx-auto mt-28">
           <div className="grid grid-cols-12 text-center lg:text-left">
             <Card className="col-span-full rounded-xl border border-white bg-white/90 py-10 p-8 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7">
