@@ -24,12 +24,12 @@ function Hero() {
           <Image
             width={400}
             height={400}
-            src="/image/logo.jpeg"
+            src="/image/logo.png"
             alt="bg-img"
             className={
               isMobile
                 ? "absolute mt-20 justify-center object-cover object-center inset-0 ml-auto"
-                : "absolute mt-20 justify-center inset-0 ml-auto w-[800px] h-[680px] rounded-bl-[100px] object-cover object-center"
+                : "absolute mt-20 justify-center inset-0 ml-auto w-[800px] h-[780px] rounded-bl-[100px] object-cover object-center"
             }
           />
           {/***/}
