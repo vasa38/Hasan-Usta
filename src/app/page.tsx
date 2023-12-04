@@ -12,12 +12,13 @@ import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
 import Image from "next/image";
 import Link from "next/link";
+import WaFab from "@/components/w-fab";
 
 export default function Campaign() {
   return (
     <>
       <Navbar />
-
+      <WaFab />
       <Hero />
       <div className="mt-20">
         <OutImpressiveStats />
