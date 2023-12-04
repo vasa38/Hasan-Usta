@@ -24,7 +24,7 @@ export function Footer() {
                   <li key={link}>
                     <Typography
                       as="a"
-                      href="#"
+                      href={`tel:${+905374962788}`}
                       className="py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900"
                     >
                       {link}

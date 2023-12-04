@@ -10,6 +10,8 @@ import {
   ChatBubbleBottomCenterIcon,
   PhoneIcon,
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
+import Link from "next/link";
 
 const NAV_MENU = [
   {
@@ -66,56 +68,35 @@ export function Navbar() {
     );
   }, []);
 
-  if (isMobile) {
-    return <></>;
+  if (!isMobile) {
+    return (
+      <Link href={`tel:${+905374962788}`}>
+        <Image
+          className="fixed"
+          src={"/image/logo.jpeg"}
+          width={200}
+          height={200}
+          alt="Hasan Usta Kayseri Tesisatçı"
+        />
+      </Link>
+    );
   }
 
   return (
-    <div className="px-10 sticky top-4 z-50">
-      <div className="mx-auto container">
-        <MTNavbar
-          blurred
-          color="white"
-          className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
-        >
-          <div className="flex items-center justify-between">
-            <Typography color="blue-gray" className="text-lg font-bold">
-              Kayseri Tesisatçı Hasan Usta
-            </Typography>
-            <ul className="ml-10 hidden items-center gap-8 lg:flex">
-              {NAV_MENU.map(({ name, icon: Icon, href }) => (
-                <NavItem key={name} href={href}>
-                  <Icon className="h-5 w-5" />
-                  {name}
-                </NavItem>
-              ))}
-            </ul>
-            <p></p>
-          </div>
-          <Collapse open={open}>
-            <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
-              <ul className="flex flex-col gap-4">
-                {NAV_MENU.map(({ name, icon: Icon, href }) => (
-                  <NavItem key={name} href={href}>
-                    <Icon className="h-5 w-5" />
-                    {name}
-                  </NavItem>
-                ))}
-              </ul>
-              <div className="mt-6 mb-4 flex items-center gap-4">
-                <Button variant="text">Log in</Button>
-                <a
-                  href="https://www.material-tailwind.com/blocks"
-                  target="_blank"
-                >
-                  <Button color="gray">blocks</Button>
-                </a>
-              </div>
+    <Link href={`tel:${+905374962788}`}>
+      <div className="flex justify-center">
+        <div className="bg-green-300 box-border w-[390px] h-16 text-center text-[21.83px] text-white font-font-awesome-5-free border-b-[1px] border-solid border-gray">
+          <div className="absolute top-[0px] left-[calc(50%_-_179.4px)] bg-lightgreen w-[358.8px] h-[63px]">
+            <div className="absolute top-[21px] left-[calc(50%_-_179px)] leading-[22px] flex items-center justify-center w-[22.2px] h-[22px]">
+              📞
             </div>
-          </Collapse>
-        </MTNavbar>
+            <div className="absolute top-[14px] left-[calc(50%_-_150px)] text-[22px] leading-[22px] font-semibold font-saira flex items-center justify-center w-[329px] h-[35px]">
+              Bizi Arayın | 90 537 496 2788
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

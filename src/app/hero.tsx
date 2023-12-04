@@ -17,17 +17,18 @@ function Hero() {
   return (
     <>
       <div
-        style={{ marginTop: isMobile ? 1000 : 0 }}
+        style={{ marginTop: isMobile ? 800 : 0 }}
         className="!flex h-[55vh] w-full items-center justify-between px-10"
       >
         <Link href={`tel:${+905374962788}`}>
           <Image
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             src="/image/logo.jpeg"
             alt="bg-img"
-            className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
+            className="absolute mt-20 inset-0 ml-auto w-[800px] h-[780px] rounded-bl-[100px] object-cover object-center"
           />
+          {/***/}
         </Link>
         <div className="container mx-auto mt-28">
           <div className="grid grid-cols-12 text-center lg:text-left">
@@ -37,7 +38,7 @@ function Hero() {
                 color="blue-gray"
                 className="lg:text-5xl !leading-snug text-3xl lg:max-w-3xl"
               >
-                Bambaşka bir tesisat deneyimi
+                35 Yıllık Tecrübe ile Kayserinin Tesisatçısı
               </Typography>
               <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
                 Mükemmel tesisat hizmetleri için sürekli olarak size vermiş
