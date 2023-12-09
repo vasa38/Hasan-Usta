@@ -20,31 +20,39 @@ function Hero() {
         style={{ marginTop: 80 }}
         className="flex justify-center items-center"
       >
-        <Typography
-          variant="h1"
-          color="blue-gray"
-          className="absolute text-[#122f53] text-center justify-center it lg:text-5xl !leading-snug text-4xl lg:max-w-3xl"
-        >
-          {"KALİTELİ İŞÇİLİK \n UYGUN FİYAT"}
-        </Typography>
+        {isMobile ? (
+          <Typography
+            variant="h1"
+            color="blue-gray"
+            className="absolute text-[#122f53] text-center justify-center it lg:text-5xl !leading-snug text-4xl lg:max-w-3xl"
+          >
+            {"KALİTELİ İŞÇİLİK \n UYGUN FİYAT"}
+          </Typography>
+        ) : (
+          <></>
+        )}
       </div>
       <div
         style={{ marginTop: isMobile ? 500 : 0 }}
         className="!flex h-[55vh] w-full items-center justify-between px-10"
       >
         <Link href={`tel:${+905374962788}`}>
-          <Image
-            width={400}
-            height={400}
-            src="/image/logo.png"
-            alt="bg-img"
-            style={{ marginTop: 180 }}
-            className={
-              isMobile
-                ? "absolute justify-center object-cover object-center inset-0 ml-auto"
-                : "absolute justify-center inset-0 ml-auto w-[800px] h-[780px] rounded-bl-[100px] object-cover object-center"
-            }
-          />
+          {!isMobile ? (
+            <Image
+              width={400}
+              height={400}
+              src="/image/logo.png"
+              alt="bg-img"
+              style={{ marginTop: 180 }}
+              className={
+                isMobile
+                  ? "absolute justify-center object-cover object-center inset-0 ml-auto"
+                  : "absolute justify-center inset-0 ml-auto w-[800px] h-[780px] rounded-bl-[100px] object-cover object-center"
+              }
+            />
+          ) : (
+            <></>
+          )}
           {/***/}
         </Link>
         <div className="container mx-auto mt-28">
