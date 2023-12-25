@@ -68,20 +68,6 @@ export function Navbar() {
     );
   }, []);
 
-  if (!isMobile) {
-    return (
-      <Link href={`tel:${+905374962788}`}>
-        <Image
-          className="fixed"
-          src={"/image/logo.jpeg"}
-          width={200}
-          height={200}
-          alt="Hasan Usta Kayseri Tesisatçı"
-        />
-      </Link>
-    );
-  }
-
   return (
     <Link href={`tel:${+905374962788}`}>
       <div className="flex justify-center">

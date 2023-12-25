@@ -39,6 +39,19 @@ function Hero() {
         <Link href={`tel:${+905374962788}`}>
           {!isMobile ? (
             <Image
+              width={600}
+              height={600}
+              src="/image/logo.png"
+              alt="bg-img"
+              style={{ marginTop: 180 }}
+              className={
+                isMobile
+                  ? "absolute justify-center object-cover object-center inset-0 ml-auto"
+                  : "absolute justify-center inset-0 ml-auto  rounded-bl-[100px] object-cover object-center"
+              }
+            />
+          ) : (
+            <Image
               width={400}
               height={400}
               src="/image/logo.png"
@@ -50,8 +63,6 @@ function Hero() {
                   : "absolute justify-center inset-0 ml-auto w-[800px] h-[780px] rounded-bl-[100px] object-cover object-center"
               }
             />
-          ) : (
-            <></>
           )}
           {/***/}
         </Link>
@@ -59,7 +70,7 @@ function Hero() {
           <div className="grid grid-cols-12 text-center lg:text-left">
             <Card className="col-span-full rounded-xl border border-white bg-white/90 py-10 p-8 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7">
               <Typography
-                variant="h1"
+                variant="h2"
                 color="blue-gray"
                 className="lg:text-5xl !leading-snug text-3xl lg:max-w-3xl"
               >
@@ -69,7 +80,7 @@ function Hero() {
                 Mükemmel tesisat hizmetleri için sürekli olarak size vermiş
                 olduğumuz hizmeti en kaliteli şekilde sunmayı hedefliyoruz.
                 Profosyenel hizmetlerimizle evinizi veya iş yerinizi güvende ve
-                konforlu tutmak için buradayız.
+                konforlu tutmak için buradayız. Kaliteli işçilik ve uygun fiyat!
               </Typography>
               <div className="mb-8 flex justify-center gap-4 lg:justify-start">
                 <a href={`tel:${+905374962788}`}>
@@ -95,4 +106,5 @@ function Hero() {
     </>
   );
 }
+
 export default Hero;
