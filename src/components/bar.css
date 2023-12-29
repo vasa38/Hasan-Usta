@@ -1,0 +1,27 @@
+@keyframes blink {
+  0%,
+  100% {
+    background-color: #fbbf24;
+  } /* orijinal turuncu renk */
+  50% {
+    background-color: #fef08a;
+  } /* daha açık bir renk */
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blinkGreen {
+  0%,
+  100% {
+    background-color: #86efac;
+  } /* orijinal yeşil renk */
+  50% {
+    background-color: #d1fae5;
+  } /* daha açık bir yeşil renk */
+}
+
+.blink-green {
+  animation: blinkGreen 1s linear infinite;
+}

@@ -56,7 +56,7 @@ function Hero() {
               height={400}
               src="/image/logo.png"
               alt="bg-img"
-              style={{ marginTop: 180 }}
+              style={{ marginTop: 220 }}
               className={
                 isMobile
                   ? "absolute justify-center object-cover object-center inset-0 ml-auto"
@@ -66,7 +66,7 @@ function Hero() {
           )}
           {/***/}
         </Link>
-        <div className="container mx-auto mt-28">
+        <div style={{ marginTop: 80 }} className="container mx-auto">
           <div className="grid grid-cols-12 text-center lg:text-left">
             <Card className="col-span-full rounded-xl border border-white bg-white/90 py-10 p-8 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7">
               <Typography
