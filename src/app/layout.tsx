@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Layout, FixedPlugin } from "@/components";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
           data-site="www.tesisatcihasanusta.com"
           src="https://api.nepcha.com/js/nepcha-analytics.js"
         ></script>
+        <GoogleTagManager gtmId="GTM-5CMBPB4C" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={roboto.className}>

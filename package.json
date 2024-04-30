@@ -24,7 +24,8 @@
     "react-dom": "18",
     "react-floating-whatsapp": "^5.0.8",
     "react-social-icons": "^6.7.0",
-    "react-tiny-fab": "^4.0.4"
+    "react-tiny-fab": "^4.0.4",
+    "@next/third-parties":"^14.2.3"
   },
   "devDependencies": {
     "@types/node": "20",
